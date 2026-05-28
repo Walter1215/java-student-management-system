@@ -1,34 +1,42 @@
 # Java Student Management System
 
-A console-based student management application built using Java, JDBC, and MySQL.
+Console-based student management application built using Java, JDBC, and MySQL concepts. This project focuses on object-oriented programming, constructors, ArrayLists, loops, and backend-style student data management workflows.
 
-## Features
+## Current Features
 
-* Add students
-* Update student information
-* Delete students
-* View student records
-* Database integration using JDBC
+* Create Student objects
+* Store multiple students using ArrayList
+* Use constructors for object initialization
+* Loop through and display student information
+* Practice Java object-oriented programming fundamentals
 
 ## Technologies
 
 * Java
 * JDBC
 * MySQL
+* Object-Oriented Programming
+* ArrayList
 
 ## Run
 
-1. Configure MySQL database connection
-2. Compile Java files
-3. Run the application
+Compile the Java files:
 
-```bash id="jlwm7706"
-javac Main.java
+```bash
+javac Main.java Student.java
+```
+
+Run the program:
+
+```bash
 java Main
 ```
 
 ## Future Improvements
 
-* Graphical user interface (GUI)
-* Search functionality
-* Authentication system
+* Add MySQL database integration
+* Add JDBC database connectivity
+* Add CRUD functionality
+* Add search functionality
+* Add authentication system
+* Add menu-driven user input
