@@ -56,6 +56,8 @@ public class main {
                 System.out.print("Enter Student Name: ");
                 String searchName = input.nextLine();
 
+                boolean found = false;
+
                 for (int i = 0; i < students.size(); i++) {
 
                     if (students.get(i).name.equalsIgnoreCase(searchName)) {
@@ -65,14 +67,22 @@ public class main {
                         System.out.println("ID: " + students.get(i).id);
                         System.out.println("Major: " + students.get(i).major);
                         System.out.println("----------------");
+
+                        found = true;
                         break;
                     }
+                }
+
+                if (!found) {
+                    System.out.println("Student not found.");
                 }
 
             } else if (choice == 4) {
 
                 System.out.print("Enter Student Name to Update: ");
                 String updateName = input.nextLine();
+
+                boolean found = false;
 
                 for (int i = 0; i < students.size(); i++) {
 
@@ -89,8 +99,14 @@ public class main {
                         students.get(i).major = input.nextLine();
 
                         System.out.println("Student Updated!");
+
+                        found = true;
                         break;
                     }
+                }
+
+                if (!found) {
+                    System.out.println("Student not found.");
                 }
 
             } else if (choice == 5) {
@@ -98,13 +114,22 @@ public class main {
                 System.out.print("Enter Student Name to Delete: ");
                 String deleteName = input.nextLine();
 
+                boolean found = false;
+
                 for (int i = 0; i < students.size(); i++) {
 
                     if (students.get(i).name.equalsIgnoreCase(deleteName)) {
                         students.remove(i);
+
                         System.out.println("Student Deleted!");
+
+                        found = true;
                         break;
                     }
+                }
+
+                if (!found) {
+                    System.out.println("Student not found.");
                 }
 
             } else if (choice == 6) {
